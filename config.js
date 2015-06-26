@@ -1,6 +1,5 @@
 module.exports = {
 	logger: {
-		logpath: './.logs',
-		messageFormat: ''
+		logpath: './.logs'
 	}
-}
+};
