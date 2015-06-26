@@ -4,9 +4,9 @@ var logGrabber = require('refurbish-notifier-logger')('grabber');
 var pager = require('refurbish-notifier-pager');
 var Parser = require('refurbish-notifier-parser');
 var path  = require('path');
-var Routing = require('www-routing');
+var Routing = require('refurbish-notifier-router');
 var store = require('refurbish-notifier-store');
-var SERVER_PORT = 3000;
+var SERVER_PORT = 3000 || process.env.PORT;
 
 //Определяем переменные
 var staticFld = path.normalize(__dirname + '/public');
